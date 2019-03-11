@@ -1,0 +1,284 @@
+.selfContainer { width: 90%; margin: 0 auto; }
+
+.mainBtn button { position: relative; width: 130px; height: 45px; border: 1px solid #00c9b1; margin-right: 20px; background: #00c9b1; cursor: pointer; border-radius: 2px; outline: none; }
+.mainBtn button:hover .btnOverlay { width: 100%; background: white; }
+.mainBtn button:hover a { color: #00c9b1; }
+.mainBtn button .btnOverlay { position: absolute; left: 0; top: 0; width: 0%; height: 43px; transition: all 0.3s ease-in-out; }
+.mainBtn button a { text-decoration: none; font-family: "Dosis", sans-serif; font-weight: 600; font-size: 15px; color: white; position: relative; z-index: 2; }
+
+.header .row .col-lg-12 h1 { font-family: "Open Sans", sans-serif; font-size: 32px; }
+.header .row .col-lg-12 p { font-size: 14px; color: #626262; }
+.header .row .col-lg-12 .line { width: 120px; height: 30px; margin: 0 auto; position: relative; }
+.header .row .col-lg-12 .line::after { content: ''; position: absolute; left: 50%; top: 50%; width: 100px; height: 2px; background: #00c9b1; transform: translate(-50%, -50%); }
+.header .row .col-lg-12 .line .lineInner { position: absolute; width: 100px; height: 100%; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+.header .row .col-lg-12 .line .lineInner::after { content: ''; position: absolute; left: 42%; top: 24%; width: 15px; height: 15px; background: #00c9b1; transform: rotate(45deg); }
+
+@media (max-width: 576px) { #featureSection { height: 1000px !important; }
+  #featureSection .selfContainer .row:nth-of-type(2) .col-sm-6 { margin-top: 40px !important; }
+  #aboutSection { height: 1100px !important; }
+  #aboutSection .selfContainer .row .col-12 .item { height: 470px !important; }
+  #aboutSection .selfContainer .row .col-12 .item .about { display: block !important; }
+  #aboutSection .selfContainer .row .col-12 .item .about li { margin-top: 10px; } }
+@media (min-width: 576px) and (max-width: 768px) { #featureSection { height: 700px !important; }
+  #featureSection .selfContainer .row:nth-of-type(2) .col-sm-6:nth-of-type(3) { margin-top: 40px !important; }
+  #aboutSection { height: 1000px !important; } }
+@media (min-width: 768px) and (max-width: 992px) { #aboutSection { height: 1000px !important; } }
+header .selfContainer .row .col-lg-6 { height: 70px; }
+header .selfContainer .row .col-lg-6 h1 { font-size: 30px; font-family: 'Open Sans', sans-serif; font-weight: 600; }
+header .selfContainer .row .col-lg-6 i { font-size: 5px; color: #00c9b1; }
+header .selfContainer .row .col-lg-6 ul li { list-style: none; }
+header .selfContainer .row .col-lg-6 ul li a { text-decoration: none; margin-left: 40px; font-family: 'Open Sans', sans-serif; color: black; font-size: 15px; transition: all 0.3s ease-in-out; }
+header .selfContainer .row .col-lg-6 ul li a:hover { color: #00c9b1; }
+
+#welcomeSection { height: 500px; background-image: url("../images/slider.jpg"); background-size: cover; background-position: center; }
+#welcomeSection .container-fluid .selfContainer .row .animationBox { width: 30px; height: 60px; border: 2px solid #00c9b1; border-radius: 20px; position: absolute; bottom: 10%; }
+#welcomeSection .container-fluid .selfContainer .row .animationBox i { position: absolute; color: #00c9b1; font-size: 13px; animation: 2s infinite ease-in-out; animation-name: circle; animation-direction: alternate; }
+@keyframes circle { 0% { top: 10%; }
+  100% { top: 70%; } }
+#welcomeSection .container-fluid .selfContainer .row .col-lg-12 { height: 500px; }
+#welcomeSection .container-fluid .selfContainer .row .col-lg-12 p { font-size: 15px; font-family: "Open Sans", sans-serif; font-weight: 600; margin: 0px; }
+#welcomeSection .container-fluid .selfContainer .row .col-lg-12 span { font-size: 40px; font-weight: 600; }
+#welcomeSection .container-fluid .selfContainer .row .col-lg-12 span span { font-weight: 600; font-size: 40px; color: #00c9b1; }
+#welcomeSection .container-fluid .selfContainer .row .col-lg-12 p:nth-of-type(2) { font-size: 15px; font-style: italic; font-weight: 400; color: #666666; }
+#welcomeSection .container-fluid .selfContainer .row .col-lg-12 .btnHolder button { position: relative; width: 130px; height: 45px; border: 1px solid #00c9b1; margin-right: 20px; background: #00c9b1; cursor: pointer; border-radius: 2px; outline: none; }
+#welcomeSection .container-fluid .selfContainer .row .col-lg-12 .btnHolder button:hover .btnOverlay { width: 100%; background: white; }
+#welcomeSection .container-fluid .selfContainer .row .col-lg-12 .btnHolder button:hover a { color: #00c9b1; }
+#welcomeSection .container-fluid .selfContainer .row .col-lg-12 .btnHolder button .btnOverlay { position: absolute; left: 0; top: 0; width: 0%; height: 43px; transition: all 0.3s ease-in-out; }
+#welcomeSection .container-fluid .selfContainer .row .col-lg-12 .btnHolder button a { text-decoration: none; font-family: "Dosis", sans-serif; font-weight: 600; font-size: 15px; color: white; position: relative; z-index: 2; }
+#welcomeSection .container-fluid .selfContainer .row .col-lg-12 .btnHolder button:nth-of-type(2) { position: relative; width: 145px; height: 45px; border: 1px solid #00c9b1; margin-right: 20px; background: #00c9b1; cursor: pointer; border-radius: 2px; outline: none; }
+#welcomeSection .container-fluid .selfContainer .row .col-lg-12 .btnHolder button:nth-of-type(2):hover .btnOverlay { height: 43px; background: white; }
+#welcomeSection .container-fluid .selfContainer .row .col-lg-12 .btnHolder button:nth-of-type(2):hover a { color: #00c9b1; }
+#welcomeSection .container-fluid .selfContainer .row .col-lg-12 .btnHolder button:nth-of-type(2) .btnOverlay { position: absolute; top: 0; width: 100%; height: 0px; transition: all 0.3s ease-in-out; }
+#welcomeSection .container-fluid .selfContainer .row .col-lg-12 .btnHolder button:nth-of-type(2) a { text-decoration: none; font-family: "Dosis", sans-serif; font-weight: 600; font-size: 15px; color: white; position: relative; z-index: 2; }
+
+#featureSection { height: 500px; }
+#featureSection .selfContainer .row .col-lg-12 h1 { font-family: "Open Sans", sans-serif; font-size: 32px; }
+#featureSection .selfContainer .row .col-lg-12 p { font-size: 14px; color: #626262; }
+#featureSection .selfContainer .row .col-lg-12 .line { width: 120px; height: 30px; margin: 0 auto; position: relative; }
+#featureSection .selfContainer .row .col-lg-12 .line::after { content: ''; position: absolute; left: 50%; top: 50%; width: 100px; height: 2px; background: #00c9b1; transform: translate(-50%, -50%); }
+#featureSection .selfContainer .row .col-lg-12 .line .lineInner { position: absolute; width: 100px; height: 100%; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+#featureSection .selfContainer .row .col-lg-12 .line .lineInner::after { content: ''; position: absolute; left: 42%; top: 24%; width: 15px; height: 15px; background: #00c9b1; transform: rotate(45deg); }
+#featureSection .selfContainer .row .col-lg-4 .item { height: 210px; padding: 0px 30px; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); transition: all 0.3s ease-in-out; }
+#featureSection .selfContainer .row .col-lg-4 .item:hover { box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); }
+#featureSection .selfContainer .row .col-lg-4 .item:hover i { background: #00c9b1; }
+#featureSection .selfContainer .row .col-lg-4 .item i { font-size: 23px; padding: 10px; color: white; background: black; border-radius: 5px; top: -12%; left: 50%; transform: translate(-50%, 12%); position: absolute; transition: all 0.3s ease-in-out; }
+#featureSection .selfContainer .row .col-lg-4 .item h1 { font-size: 20px; color: #232323; font-family: "Dosis", sans-serif; }
+#featureSection .selfContainer .row .col-lg-4 .item p { font-size: 13px; color: #626262; font-family: "Open Sans", sans-serif; }
+
+#aboutSection { background: #f6f6f6; height: 600px; }
+#aboutSection .selfContainer .row .col-lg-6:nth-of-type(1) { box-sizing: border-box; }
+#aboutSection .selfContainer .row .col-lg-6:nth-of-type(1) .item { height: 400px; }
+#aboutSection .selfContainer .row .col-lg-6:nth-of-type(1) .item h1 { font-size: 30px; font-family: "Open Sans", sans-serif; font-weight: 600; }
+#aboutSection .selfContainer .row .col-lg-6:nth-of-type(1) .item p { font-size: 14px; color: #626262; }
+#aboutSection .selfContainer .row .col-lg-6:nth-of-type(1) .item p span { font-weight: bold; }
+#aboutSection .selfContainer .row .col-lg-6:nth-of-type(1) .item .about li { list-style: none; }
+#aboutSection .selfContainer .row .col-lg-6:nth-of-type(1) .item .about li i { font-size: 18px; background: #00c9b1; padding: 12px; color: white; border-radius: 3px; }
+#aboutSection .selfContainer .row .col-lg-6:nth-of-type(1) .item .about li a { font-size: 14px; color: #626262; margin: 10px 10px; text-decoration: none; }
+#aboutSection .selfContainer .row .col-lg-6:nth-of-type(1) .item .socialNetwork li { list-style: none; }
+#aboutSection .selfContainer .row .col-lg-6:nth-of-type(1) .item .socialNetwork li i { font-size: 16px; padding: 13px; background: white; border: 2px solid black; margin-right: 20px; transition: all 0.3s ease-in-out; }
+#aboutSection .selfContainer .row .col-lg-6:nth-of-type(1) .item .socialNetwork li i:hover { border: 2px solid #00c9b1; background: #00c9b1; color: white; }
+#aboutSection .selfContainer .row .col-lg-6:nth-of-type(1) .item button { position: relative; width: 130px; height: 45px; border: 1px solid #00c9b1; margin-right: 20px; background: #00c9b1; cursor: pointer; border-radius: 2px; outline: none; }
+#aboutSection .selfContainer .row .col-lg-6:nth-of-type(1) .item button:hover .btnOverlay { width: 100%; background: white; }
+#aboutSection .selfContainer .row .col-lg-6:nth-of-type(1) .item button:hover a { color: #00c9b1; }
+#aboutSection .selfContainer .row .col-lg-6:nth-of-type(1) .item button .btnOverlay { position: absolute; left: 0; top: 0; width: 0%; height: 43px; transition: all 0.3s ease-in-out; }
+#aboutSection .selfContainer .row .col-lg-6:nth-of-type(1) .item button a { text-decoration: none; font-family: "Dosis", sans-serif; font-weight: 600; font-size: 15px; color: white; position: relative; z-index: 2; }
+#aboutSection .selfContainer .row .col-lg-6:nth-of-type(2) .item { height: 450px; }
+#aboutSection .selfContainer .row .col-lg-6:nth-of-type(2) .item h1 { font-size: 22px; font-family: "Dosis", sans-serif; }
+#aboutSection .selfContainer .row .col-lg-6:nth-of-type(2) .item p { font-family: "Open Sans", sans-serif; font-size: 14px; color: #626262; }
+
+#servicesSection .selfContainer .row .col-lg-12 h1 { font-family: "Open Sans", sans-serif; font-size: 32px; }
+#servicesSection .selfContainer .row .col-lg-12 p { font-size: 14px; color: #626262; }
+#servicesSection .selfContainer .row .col-lg-12 .line { width: 120px; height: 30px; margin: 0 auto; position: relative; }
+#servicesSection .selfContainer .row .col-lg-12 .line::after { content: ''; position: absolute; left: 50%; top: 50%; width: 100px; height: 2px; background: #00c9b1; transform: translate(-50%, -50%); }
+#servicesSection .selfContainer .row .col-lg-12 .line .lineInner { position: absolute; width: 100px; height: 100%; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+#servicesSection .selfContainer .row .col-lg-12 .line .lineInner::after { content: ''; position: absolute; left: 42%; top: 24%; width: 15px; height: 15px; background: #00c9b1; transform: rotate(45deg); }
+#servicesSection .selfContainer .row .col-lg-4 { margin-bottom: 30px; }
+#servicesSection .selfContainer .row .col-lg-4 .item { height: 210px; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); padding: 0px 40px; transition: all 0.3s ease-in-out; }
+#servicesSection .selfContainer .row .col-lg-4 .item:hover { transform: translateY(-7%); }
+#servicesSection .selfContainer .row .col-lg-4 .item:hover i { transform: translateY(-12%); }
+#servicesSection .selfContainer .row .col-lg-4 .item i { font-size: 30px; color: #00c9b1; transition: all 0.3s ease-in-out; }
+#servicesSection .selfContainer .row .col-lg-4 .item h1 { font-size: 20px; color: #2e2e2e; font-family: "Dosis", sans-serif; letter-spacing: 2px; }
+#servicesSection .selfContainer .row .col-lg-4 .item p { font-family: "Open Sans", sans-serif; font-size: 13px; color: #626262; }
+
+#portfolioSection { background: #f6f6f6; }
+#portfolioSection .selfContainer .row .col-lg-12 h1 { font-family: "Open Sans", sans-serif; font-size: 32px; }
+#portfolioSection .selfContainer .row .col-lg-12 p { font-size: 14px; color: #626262; }
+#portfolioSection .selfContainer .row .col-lg-12 .line { width: 120px; height: 30px; margin: 0 auto; position: relative; }
+#portfolioSection .selfContainer .row .col-lg-12 .line::after { content: ''; position: absolute; left: 50%; top: 50%; width: 100px; height: 2px; background: #00c9b1; transform: translate(-50%, -50%); }
+#portfolioSection .selfContainer .row .col-lg-12 .line .lineInner { position: absolute; width: 100px; height: 100%; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+#portfolioSection .selfContainer .row .col-lg-12 .line .lineInner::after { content: ''; position: absolute; left: 42%; top: 24%; width: 15px; height: 15px; background: #00c9b1; transform: rotate(45deg); }
+#portfolioSection .selfContainer .row .col-lg-12 ul { width: 80%; }
+#portfolioSection .selfContainer .row .col-lg-12 ul li { background: #c9c9c9; list-style: none; margin: 10px; padding: 5px 20px; border-radius: 3px; cursor: pointer; position: relative; z-index: 1; }
+#portfolioSection .selfContainer .row .col-lg-12 ul li:hover::before { content: ""; height: 100%; }
+#portfolioSection .selfContainer .row .col-lg-12 ul li:hover::after { content: ""; height: 100%; }
+#portfolioSection .selfContainer .row .col-lg-12 ul li::before { position: absolute; content: ''; left: 0; top: 0; width: 50%; height: 0px; background: #00c9b1; transition: all 0.3s ease-in-out; z-index: -1; }
+#portfolioSection .selfContainer .row .col-lg-12 ul li::after { position: absolute; content: ''; right: 0; bottom: 0; width: 50%; height: 0px; background: #00c9b1; transition: all 0.3s ease-in-out; z-index: -1; }
+#portfolioSection .selfContainer .row .col-lg-12 ul li a { text-decoration: none; color: #ffffff; font-size: 14px; font-family: "Open Sans", sans-serif; z-index: 1; }
+#portfolioSection .selfContainer .row .col-lg-4 { padding: 0; position: relative; overflow: hidden; }
+#portfolioSection .selfContainer .row .col-lg-4:hover img { transform: scale(1.1); }
+#portfolioSection .selfContainer .row .col-lg-4:hover .imgOverlay { background: rgba(0, 201, 177, 0.8); transform: scale(0.8); }
+#portfolioSection .selfContainer .row .col-lg-4:hover .imgOverlay .innerOverlay { background: rgba(255, 255, 255, 0); transform: rotateX(0deg); }
+#portfolioSection .selfContainer .row .col-lg-4 img { object-fit: cover; width: 100%; height: 100%; transform: scale(1); transition: all 0.3s ease-in-out; }
+#portfolioSection .selfContainer .row .col-lg-4 .imgOverlay { position: absolute; width: 100%; height: 100%; background: rgba(0, 201, 177, 0); z-index: 1; top: 0; left: 0; transform: scale(0.7); transition: all 0.3s ease-in-out; }
+#portfolioSection .selfContainer .row .col-lg-4 .imgOverlay .innerOverlay { position: absolute; width: 300px; height: 200px; background: rgba(255, 255, 255, 0); transform: rotateX(90deg); transition: all 0.3s ease-in-out; }
+#portfolioSection .selfContainer .row .col-lg-4 .imgOverlay .innerOverlay i { font-size: 40px; color: #00c9b1; background: white; border-radius: 50%; padding: 10px; transition: all 0.3s ease-in-out; }
+#portfolioSection .selfContainer .row .col-lg-4 .imgOverlay .innerOverlay i:hover { color: #00c9b1; transform: translateY(-10%); }
+#portfolioSection .selfContainer .row .col-lg-4 .imgOverlay .innerOverlay h1 { font-family: "Dosis", sans-serif; font-size: 30px; color: white; }
+#portfolioSection .selfContainer .row .col-lg-4 .imgOverlay .innerOverlay p { font-style: italic; font-size: 15px; color: white; }
+#portfolioSection .selfContainer .row .col-12 button { position: relative; width: 130px; height: 45px; border: 1px solid #00c9b1; margin-right: 20px; background: #00c9b1; cursor: pointer; border-radius: 2px; outline: none; }
+#portfolioSection .selfContainer .row .col-12 button:hover .btnOverlay { width: 100%; background: white; }
+#portfolioSection .selfContainer .row .col-12 button:hover a { color: #00c9b1; }
+#portfolioSection .selfContainer .row .col-12 button .btnOverlay { position: absolute; left: 0; top: 0; width: 0%; height: 43px; transition: all 0.3s ease-in-out; }
+#portfolioSection .selfContainer .row .col-12 button a { text-decoration: none; font-family: "Dosis", sans-serif; font-weight: 600; font-size: 15px; color: white; position: relative; z-index: 2; }
+#portfolioSection .selfContainer .row .col-lg-3 .item { height: 170px; }
+#portfolioSection .selfContainer .row .col-lg-3 .item img { object-fit: cover; width: 100%; height: 100%; }
+#portfolioSection .selfContainer .row .col-lg-3 .item .imgOverlay { position: absolute; width: 100%; height: 100%; transform: scale(0.8); background: rgba(255, 255, 255, 0.671); top: 0; left: 0; }
+#portfolioSection .selfContainer .row .col-lg-3 .item .imgOverlay i { font-size: 40px; color: #00c9b1; }
+#portfolioSection .selfContainer .row .col-lg-3 .item .imgOverlay p { font-family: "Dosis", sans-serif; font-size: 25px; }
+
+#teamSection .selfContainer .row .col-lg-12 h1 { font-family: "Open Sans", sans-serif; font-size: 32px; }
+#teamSection .selfContainer .row .col-lg-12 p { font-size: 14px; color: #626262; }
+#teamSection .selfContainer .row .col-lg-12 .line { width: 120px; height: 30px; margin: 0 auto; position: relative; }
+#teamSection .selfContainer .row .col-lg-12 .line::after { content: ''; position: absolute; left: 50%; top: 50%; width: 100px; height: 2px; background: #00c9b1; transform: translate(-50%, -50%); }
+#teamSection .selfContainer .row .col-lg-12 .line .lineInner { position: absolute; width: 100px; height: 100%; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+#teamSection .selfContainer .row .col-lg-12 .line .lineInner::after { content: ''; position: absolute; left: 42%; top: 24%; width: 15px; height: 15px; background: #00c9b1; transform: rotate(45deg); }
+#teamSection .selfContainer .row .col-lg-3:hover .item::before { content: ''; position: absolute; width: 100%; height: 100px; left: 30px; bottom: -34%; transform: rotate(0deg); transform-origin: 0% 0%; }
+#teamSection .selfContainer .row .col-lg-3:hover .item .itemOverlay { top: 0; left: 0; background: rgba(0, 0, 0, 0.534); width: 100%; height: 100%; }
+#teamSection .selfContainer .row .col-lg-3:hover .item .itemOverlay .iconHolder { width: 40px; height: 40px; box-sizing: border-box; border: 2px solid white; }
+#teamSection .selfContainer .row .col-lg-3:hover .item .itemOverlay .iconHolder i { font-size: 15px; }
+#teamSection .selfContainer .row .col-lg-3 .item { box-sizing: border-box; height: 300px; position: relative; overflow: hidden; }
+#teamSection .selfContainer .row .col-lg-3 .item::before { content: ''; position: absolute; width: 100%; height: 100px; left: 30px; bottom: -34%; background: white; transform: rotate(-15deg); transform-origin: 0% 0%; transition: all 0.3s ease-in-out; }
+#teamSection .selfContainer .row .col-lg-3 .item img { object-fit: cover; width: 100%; height: 100%; }
+#teamSection .selfContainer .row .col-lg-3 .item .itemOverlay { position: absolute; left: 0; top: 0; width: 0%; height: 0%; background: rgba(0, 0, 0, 0.534); transition: all 0.3s ease-in-out; }
+#teamSection .selfContainer .row .col-lg-3 .item .itemOverlay .iconHolder { width: 0px; height: 0px; box-sizing: border-box; border: 0px solid white; border-radius: 3px; transition: all 0.3s ease-in-out; cursor: pointer; }
+#teamSection .selfContainer .row .col-lg-3 .item .itemOverlay .iconHolder:hover { border: 2px solid #00c9b1; background: #00c9b1; }
+#teamSection .selfContainer .row .col-lg-3 .item .itemOverlay .iconHolder i { color: white; font-size: 0px; transition: all 0.3s ease-in-out; }
+#teamSection .selfContainer .row .col-lg-3 .personInfo { border-bottom: 2px solid #00c9b1; }
+#teamSection .selfContainer .row .col-lg-3 .personInfo h1 { font-family: "Dosis", sans-serif; font-size: 22px; }
+#teamSection .selfContainer .row .col-lg-3 .personInfo p { font-family: "Open Sans", sans-serif; font-size: 14px; font-style: italic; color: #00c9b1; }
+
+#feedbackSection { background: #f6f6f6; }
+#feedbackSection .selfContainer .row .col-lg-12 h1 { font-family: "Open Sans", sans-serif; font-size: 32px; }
+#feedbackSection .selfContainer .row .col-lg-12 p { font-size: 14px; color: #626262; }
+#feedbackSection .selfContainer .row .col-lg-12 .line { width: 120px; height: 30px; margin: 0 auto; position: relative; }
+#feedbackSection .selfContainer .row .col-lg-12 .line::after { content: ''; position: absolute; left: 50%; top: 50%; width: 100px; height: 2px; background: #00c9b1; transform: translate(-50%, -50%); }
+#feedbackSection .selfContainer .row .col-lg-12 .line .lineInner { position: absolute; width: 100px; height: 100%; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+#feedbackSection .selfContainer .row .col-lg-12 .line .lineInner::after { content: ''; position: absolute; left: 42%; top: 24%; width: 15px; height: 15px; background: #00c9b1; transform: rotate(45deg); }
+#feedbackSection .selfContainer .row .col-lg-4 .item { box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.15); height: 300px; }
+#feedbackSection .selfContainer .row .col-lg-4 .item .imgHolder { width: 90px; height: auto; border-radius: 50%; overflow: hidden; }
+#feedbackSection .selfContainer .row .col-lg-4 .item .imgHolder img { object-fit: cover; width: 100%; height: 100%; }
+#feedbackSection .selfContainer .row .col-lg-4 .item .textHolder { width: 80%; height: auto; }
+#feedbackSection .selfContainer .row .col-lg-4 .item .textHolder p { font-family: "Open Sans", sans-serif; text-decoration-skip: 14px; color: #626262; font-style: italic; font-weight: 200; }
+#feedbackSection .selfContainer .row .col-lg-4 .item .personalInfo { width: 80%; height: auto; }
+#feedbackSection .selfContainer .row .col-lg-4 .item .personalInfo h1 { font-size: 16px; color: #00c9b1; font-family: "Open Sans", sans-serif; margin: 0; }
+#feedbackSection .selfContainer .row .col-lg-4 .item .personalInfo p { font-style: italic; color: #626262; font-size: 12px; }
+
+#partnerSection .selfContainer .row .col-lg-2 .imgHolder { height: 150px; }
+#partnerSection .selfContainer .row .col-lg-2 .imgHolder img { object-fit: contain; width: 100%; height: 100%; }
+
+#licenseSection { background: #f6f6f6; }
+#licenseSection .selfContainer .row .col-lg-12 h1 { font-family: "Open Sans", sans-serif; font-size: 32px; }
+#licenseSection .selfContainer .row .col-lg-12 p { font-size: 14px; color: #626262; }
+#licenseSection .selfContainer .row .col-lg-12 .line { width: 120px; height: 30px; margin: 0 auto; position: relative; }
+#licenseSection .selfContainer .row .col-lg-12 .line::after { content: ''; position: absolute; left: 50%; top: 50%; width: 100px; height: 2px; background: #00c9b1; transform: translate(-50%, -50%); }
+#licenseSection .selfContainer .row .col-lg-12 .line .lineInner { position: absolute; width: 100px; height: 100%; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+#licenseSection .selfContainer .row .col-lg-12 .line .lineInner::after { content: ''; position: absolute; left: 42%; top: 24%; width: 15px; height: 15px; background: #00c9b1; transform: rotate(45deg); }
+#licenseSection .selfContainer .row .col-lg-4 .item { box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); border-radius: 5px; height: 400px; background: white; transition: all 0.3s ease-in-out; }
+#licenseSection .selfContainer .row .col-lg-4 .item:hover { background: #00c9b1; }
+#licenseSection .selfContainer .row .col-lg-4 .item:hover .licenseType p { color: white; }
+#licenseSection .selfContainer .row .col-lg-4 .item:hover .licensePrice h1 { color: white; }
+#licenseSection .selfContainer .row .col-lg-4 .item:hover .licensePrice p { color: white; }
+#licenseSection .selfContainer .row .col-lg-4 .item:hover .licenseInfo ul li i { color: white; }
+#licenseSection .selfContainer .row .col-lg-4 .item:hover .licenseInfo ul li a { color: white; }
+#licenseSection .selfContainer .row .col-lg-4 .item:hover .btnHolder button { border: 1px solid white; }
+#licenseSection .selfContainer .row .col-lg-4 .item .licenseType { height: 50px; }
+#licenseSection .selfContainer .row .col-lg-4 .item .licenseType p { font-family: "Open Sans", sans-serif; font-size: 14px; font-weight: bold; margin: 0; transition: all 0.3s ease-in-out; }
+#licenseSection .selfContainer .row .col-lg-4 .item .licensePrice { height: 80px; }
+#licenseSection .selfContainer .row .col-lg-4 .item .licensePrice h1 { font-family: "Dosis", sans-serif; font-size: 48px; font-weight: bold; margin: 0; transition: all 0.3s ease-in-out; }
+#licenseSection .selfContainer .row .col-lg-4 .item .licensePrice p { font-family: "Open Sans", sans-serif; font-size: 12px; transition: all 0.3s ease-in-out; }
+#licenseSection .selfContainer .row .col-lg-4 .item .licenseInfo { height: 170px; }
+#licenseSection .selfContainer .row .col-lg-4 .item .licenseInfo ul { padding: 0; }
+#licenseSection .selfContainer .row .col-lg-4 .item .licenseInfo ul li { list-style: none; margin-bottom: 10px; }
+#licenseSection .selfContainer .row .col-lg-4 .item .licenseInfo ul li i { color: #00c9b1; margin-right: 10px; transition: all 0.3s ease-in-out; }
+#licenseSection .selfContainer .row .col-lg-4 .item .licenseInfo ul li a { color: black; text-decoration: none; font-family: "Open Sans", sans-serif; font-size: 14px; font-weight: 600; transition: all 0.3s ease-in-out; }
+#licenseSection .selfContainer .row .col-lg-4 .item .btnHolder { height: 100px; }
+#licenseSection .selfContainer .row .col-lg-4 .item .btnHolder button { position: relative; width: 130px; height: 45px; border: 1px solid #00c9b1; background: #00c9b1; cursor: pointer; border-radius: 2px; outline: none; transition: all 0.3s ease-in-out; }
+#licenseSection .selfContainer .row .col-lg-4 .item .btnHolder button:hover .btnOverlay { width: 100%; background: white; }
+#licenseSection .selfContainer .row .col-lg-4 .item .btnHolder button:hover a { color: #00c9b1; }
+#licenseSection .selfContainer .row .col-lg-4 .item .btnHolder button .btnOverlay { position: absolute; left: 0; top: 0; width: 0%; height: 43px; transition: all 0.3s ease-in-out; }
+#licenseSection .selfContainer .row .col-lg-4 .item .btnHolder button a { text-decoration: none; font-family: "Dosis", sans-serif; font-weight: 600; font-size: 15px; color: white; position: relative; z-index: 2; }
+
+#postSection .selfContainer .row .col-lg-12 h1 { font-family: "Open Sans", sans-serif; font-size: 32px; }
+#postSection .selfContainer .row .col-lg-12 p { font-size: 14px; color: #626262; }
+#postSection .selfContainer .row .col-lg-12 .line { width: 120px; height: 30px; margin: 0 auto; position: relative; }
+#postSection .selfContainer .row .col-lg-12 .line::after { content: ''; position: absolute; left: 50%; top: 50%; width: 100px; height: 2px; background: #00c9b1; transform: translate(-50%, -50%); }
+#postSection .selfContainer .row .col-lg-12 .line .lineInner { position: absolute; width: 100px; height: 100%; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+#postSection .selfContainer .row .col-lg-12 .line .lineInner::after { content: ''; position: absolute; left: 42%; top: 24%; width: 15px; height: 15px; background: #00c9b1; transform: rotate(45deg); }
+#postSection .selfContainer .row .col-lg-4 .item { height: 460px; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); transition: all 0.3s ease-in-out; }
+#postSection .selfContainer .row .col-lg-4 .item:hover { box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); }
+#postSection .selfContainer .row .col-lg-4 .item img { object-fit: cover; width: 100%; height: 50%; }
+#postSection .selfContainer .row .col-lg-4 .item .postInfo { width: 90%; position: relative; }
+#postSection .selfContainer .row .col-lg-4 .item .postInfo h1 { font-size: 22px; font-family: "Open Sans", sans-serif; color: black; font-weight: 600; transition: all 0.3s ease-in-out; cursor: pointer; }
+#postSection .selfContainer .row .col-lg-4 .item .postInfo h1:hover { color: #00c9b1; }
+#postSection .selfContainer .row .col-lg-4 .item .postInfo ul li { list-style: none; }
+#postSection .selfContainer .row .col-lg-4 .item .postInfo ul li i { color: #00c9b1; margin-right: 5px; font-size: 12px; }
+#postSection .selfContainer .row .col-lg-4 .item .postInfo ul li a { text-decoration: none; color: #626262; font-size: 13px; margin-right: 15px; transition: all 0.3s ease-in-out; cursor: pointer; }
+#postSection .selfContainer .row .col-lg-4 .item .postInfo ul li a:hover { color: #00c9b1; }
+#postSection .selfContainer .row .col-lg-4 .item .postInfo p { color: #626262; font-size: 14px; font-family: "Open Sans", sans-serif; }
+#postSection .selfContainer .row .col-lg-4 .item .postInfo .likeIcon { color: #00c9b1; cursor: pointer; }
+#postSection .selfContainer .row .col-lg-4 .item .postInfo .likeIcon:hover::after { color: #00c9b1; }
+#postSection .selfContainer .row .col-lg-4 .item .postInfo .likeIcon::after { content: '20'; color: black; margin-left: 5px; font-size: 12px; font-family: "Open Sans", sans-serif; transition: all 0.3s ease-in-out; cursor: pointer; }
+#postSection .selfContainer .row .col-lg-4 .item .postInfo span { position: absolute; right: 0; bottom: 0; font-size: 12px; font-family: "Open Sans", sans-serif; transition: all 0.3s ease-in-out; cursor: pointer; }
+#postSection .selfContainer .row .col-lg-4 .item .postInfo span:hover { color: #00c9b1; }
+#postSection .selfContainer .row .col-lg-4 .item .postInfo span:hover::before { width: 30px; height: 1px; left: 0; }
+#postSection .selfContainer .row .col-lg-4 .item .postInfo span::before { content: ''; width: 0px; height: 0px; background: #00c9b1; position: absolute; bottom: 0; left: -50%; transition: all 0.3s ease-in-out; }
+
+#subscribeSection { height: 330px; background-image: url("../images/subscribe.jpg"); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; background-position-y: 0%; position: relative; }
+#subscribeSection .imgOverlay { position: absolute; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.473); }
+#subscribeSection .imgOverlay .selfContainer .row .col-lg-12 .item { height: 330px; }
+#subscribeSection .imgOverlay .selfContainer .row .col-lg-12 .item h1 { font-family: "Dosis", sans-serif; font-size: 32px; color: white; }
+#subscribeSection .imgOverlay .selfContainer .row .col-lg-12 .item .Subscribe form input { width: 300px; height: 40px; outline: none; border: none; background: rgba(224, 224, 224, 0.507); color: white; padding-left: 10px; }
+#subscribeSection .imgOverlay .selfContainer .row .col-lg-12 .item .Subscribe form ::placeholder { color: white; font-size: 14px; font-weight: 600; }
+#subscribeSection .imgOverlay .selfContainer .row .col-lg-12 .item .Subscribe button { position: relative; width: 130px; height: 40px; border: 1px solid #00c9b1; margin-right: 20px; background: #00c9b1; cursor: pointer; border-radius: 2px; outline: none; }
+#subscribeSection .imgOverlay .selfContainer .row .col-lg-12 .item .Subscribe button:hover .btnOverlay { width: 100%; background: white; }
+#subscribeSection .imgOverlay .selfContainer .row .col-lg-12 .item .Subscribe button:hover a { color: #00c9b1; }
+#subscribeSection .imgOverlay .selfContainer .row .col-lg-12 .item .Subscribe button .btnOverlay { position: absolute; left: 0; top: 0; width: 0%; height: 38px; transition: all 0.3s ease-in-out; }
+#subscribeSection .imgOverlay .selfContainer .row .col-lg-12 .item .Subscribe button a { text-decoration: none; font-family: "Dosis", sans-serif; font-weight: 600; font-size: 15px; color: white; position: relative; z-index: 2; }
+#subscribeSection .imgOverlay .selfContainer .row .col-lg-12 .item .Icons { width: 300px; }
+#subscribeSection .imgOverlay .selfContainer .row .col-lg-12 .item .Icons .iconHolder { width: 40px; height: 40px; border: 2px solid white; border-radius: 3px; background: transparent; transition: all 0.3s ease-in-out; cursor: pointer; }
+#subscribeSection .imgOverlay .selfContainer .row .col-lg-12 .item .Icons .iconHolder:hover { border: 2px solid #00c9b1; background: #00c9b1; }
+#subscribeSection .imgOverlay .selfContainer .row .col-lg-12 .item .Icons .iconHolder i { color: white; }
+
+footer .selfContainer .row .col-lg-4 .item h1 { font-size: 28px; font-family: "Dosis", sans-serif; color: #2e2e2e; }
+footer .selfContainer .row .col-lg-4 .item ul li { margin: 20px 0px; }
+footer .selfContainer .row .col-lg-4 .item ul li i { font-size: 25px; color: #00c9b1; }
+footer .selfContainer .row .col-lg-4 .item ul li p { font-family: "Dosis", sans-serif; font-size: 18px; font-weight: 600; margin: 0; }
+footer .selfContainer .row .col-lg-4 .item ul li span { font-size: 14px; color: #626262; }
+footer .selfContainer .row .col-lg-4 .item ul li .hoverSpan1 { text-decoration: underline; cursor: pointer; transition: all 0.3s ease-in-out; }
+footer .selfContainer .row .col-lg-4 .item ul li .hoverSpan1:hover { color: #00c9b1; }
+footer .selfContainer .row .col-lg-4 .item ul li .hoverSpan2 { text-decoration: underline; cursor: pointer; transition: all 0.3s ease-in-out; }
+footer .selfContainer .row .col-lg-4 .item ul li .hoverSpan2:hover { color: #00c9b1; }
+footer .selfContainer .row .col-lg-8 .item h1 { font-size: 28px; font-family: "Dosis", sans-serif; color: #2e2e2e; }
+footer .selfContainer .row .col-lg-8 .item form { display: flex; flex-wrap: wrap; justify-content: space-between; }
+footer .selfContainer .row .col-lg-8 .item form .col-lg-6 .inputHolder { height: 50px; margin-top: 20px; width: 100%; }
+footer .selfContainer .row .col-lg-8 .item form .col-lg-6 .inputHolder input { width: 95%; height: 48px; outline: none; border-radius: 5px; border: 1px solid #e5e5e5; position: absolute; padding-left: 20px; }
+footer .selfContainer .row .col-lg-8 .item form .col-lg-6 .inputHolder input::placeholder { color: #5a5a5a; font-size: 14px; }
+footer .selfContainer .row .col-lg-8 .item form .col-lg-12 textarea { width: 100%; height: 130px; outline: none; border-radius: 5px; border: 1px solid #e5e5e5; outline: none; padding-left: 20px; }
+footer .selfContainer .row .col-lg-8 .item form button { position: relative; width: 130px; height: 45px; border: 1px solid #00c9b1; margin-right: 20px; background: #00c9b1; cursor: pointer; border-radius: 2px; outline: none; margin-left: 15px; }
+footer .selfContainer .row .col-lg-8 .item form button:hover .btnOverlay { width: 100%; background: white; }
+footer .selfContainer .row .col-lg-8 .item form button:hover a { color: #00c9b1; }
+footer .selfContainer .row .col-lg-8 .item form button .btnOverlay { position: absolute; left: 0; top: 0; width: 0%; height: 43px; transition: all 0.3s ease-in-out; }
+footer .selfContainer .row .col-lg-8 .item form button a { text-decoration: none; font-family: "Dosis", sans-serif; font-weight: 600; font-size: 15px; color: white; position: relative; z-index: 2; }
+footer .container-fluid { border-top: 1px solid #ddd; }
+footer .container-fluid .selfContainer .row .col-lg-4 .item { height: 60px; }
+footer .container-fluid .selfContainer .row .col-lg-4 .item p { font-size: 13px; font-family: "Open Sans", sans-serif; color: #232323; font-weight: 600; }
+footer .container-fluid .selfContainer .row .col-lg-4 .item p span { font-size: 13px; font-family: "Open Sans", sans-serif; color: #00c9b1; font-weight: 600; }
+footer .container-fluid .selfContainer .row .col-lg-4 .item { height: 60px; }
+footer .container-fluid .selfContainer .row .col-lg-4 .item ul li { list-style: none; margin-right: 15px; }
+footer .container-fluid .selfContainer .row .col-lg-4 .item ul li a { text-decoration: none; font-size: 15px; font-family: "Open Sans", sans-serif; color: #232323; font-weight: 600; transition: all 0.3s ease-in-out; }
+footer .container-fluid .selfContainer .row .col-lg-4 .item ul li a:hover { color: #00c9b1; }
+footer .container-fluid .selfContainer .row .col-lg-4 .item { height: 60px; }
+footer .container-fluid .selfContainer .row .col-lg-4 .item .iconHolder { box-sizing: border-box; border: 2px solid black; width: 40px; height: 40px; border-radius: 3px; margin-left: 10px; transition: all 0.3s ease-in-out; cursor: pointer; }
+footer .container-fluid .selfContainer .row .col-lg-4 .item .iconHolder i { transition: all 0.3s ease-in-out; }
+footer .container-fluid .selfContainer .row .col-lg-4 .item .iconHolder:hover { border: #00c9b1; background: #00c9b1; }
+footer .container-fluid .selfContainer .row .col-lg-4 .item .iconHolder:hover i { color: white; }

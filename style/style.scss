@@ -1,0 +1,1721 @@
+@import '../libs/variables';
+@import '../libs/common';
+@import '../libs/mixins';
+
+@media (max-width: 576px) {
+    #featureSection {
+        height: 1000px !important;
+        .selfContainer {
+            .row:nth-of-type(2) {
+                .col-sm-6 {
+                    margin-top: 40px !important;
+                }
+            }
+        }
+    }
+    #aboutSection {
+        height: 1100px !important;
+        .selfContainer {
+            .row {
+                .col-12 {
+                    .item {
+                        height: 470px !important;
+                        .about {
+                            display: block !important;
+                            li {
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    #featureSection {
+            height: 700px !important;
+        .selfContainer {
+            .row:nth-of-type(2) {
+                .col-sm-6:nth-of-type(3) {
+                    margin-top: 40px !important;
+                }
+            }
+        }
+    }
+    #aboutSection {
+        height: 1000px !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    #aboutSection {
+        height: 1000px !important;
+    }
+}
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// Start of the header Section
+header {
+    .selfContainer {
+        .row {
+            .col-lg-6 {
+                height: 70px;
+                h1 {
+                    font-size: 30px;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 600;
+                }
+                i {
+                    font-size: 5px;
+                    color: $mainColor;
+                }
+                ul {
+                    li {
+                        list-style: none;
+                        a {
+                            text-decoration: none;
+                            margin-left: 40px;
+                            font-family: 'Open Sans', sans-serif;
+                            color: black;
+                            font-size: 15px;
+                            transition: $transition;
+                            &:hover {
+                                color: $mainColor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End of the header Section
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// Start of the welcome Section
+#welcomeSection {
+    height: 500px;
+    background-image: url("../images/slider.jpg");
+    background-size: cover;
+    background-position: center;
+    .container-fluid {
+        .selfContainer {
+            .row {
+                .animationBox {
+                    width: 30px;
+                    height: 60px;
+                    border: 2px solid $mainColor;
+                    border-radius: 20px;
+                    position: absolute;
+                    bottom: 10%;
+                    i {
+                        position: absolute;
+                        color: $mainColor;
+                        font-size: 13px;
+                        animation: 2s infinite ease-in-out;
+                        animation-name: circle;
+                        animation-direction: alternate;
+                        @keyframes circle {
+                            0%   { top:10%;}
+                            100% { top:70%;}
+                          }
+                    }
+                }
+                .col-lg-12 {
+                    height: 500px;
+                    p {
+                    font-size: 15px;
+                    font-family: $fFamily;
+                    font-weight: 600;
+                    margin: 0px;
+                }
+                span {
+                    font-size: 40px;
+                    font-weight: 600;
+                    span {
+                        font-weight: 600;
+                        font-size: 40px;
+                        color: $mainColor;
+                    }
+                }
+                p:nth-of-type(2) {
+                    font-size: 15px;
+                    font-style: italic;
+                    font-weight: 400;
+                    color: #666666;
+                }
+                .btnHolder {
+                    button {
+                        position: relative;
+                        width: 130px;
+                        height: 45px;
+                        border: 1px solid $mainColor;
+                        margin-right: 20px;
+                        background: $mainColor;
+                        cursor: pointer;
+                        border-radius: 2px;
+                        outline: none;
+                        &:hover {
+                            .btnOverlay {
+                                width: 100%;
+                                background: white;
+                            }
+                            a {
+                                color: $mainColor;
+                            }
+                        }
+                        .btnOverlay {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 0%;
+                            height: 43px;
+                            transition: $transition;
+                        }
+                        a {
+                            text-decoration: none;
+                            font-family: $Dosis;
+                            font-weight: 600;
+                            font-size: 15px;
+                            color: white;
+                            position: relative;
+                            z-index: 2;
+                        }
+                    }
+                    button:nth-of-type(2) {
+                        position: relative;
+                        width: 145px;
+                        height: 45px;
+                        border: 1px solid $mainColor;
+                        margin-right: 20px;
+                        background: $mainColor;
+                        cursor: pointer;
+                        border-radius: 2px;
+                        outline: none;
+                        &:hover {
+                            .btnOverlay {
+                                height: 43px;
+                                background: white;
+                            }
+                            a {
+                                color: $mainColor;
+                            }
+                        }
+                        .btnOverlay {
+                            position: absolute;
+                            top: 0;
+                            width: 100%;
+                            height: 0px;
+                            transition: $transition;
+                        }
+                        a {
+                            text-decoration: none;
+                            font-family: $Dosis;
+                            font-weight: 600;
+                            font-size: 15px;
+                            color: white;
+                            position: relative;
+                            z-index: 2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    }
+}
+// End of the welcome Section
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// Start of the feature Section
+#featureSection {
+    height: 500px;
+    .selfContainer {
+        .row {
+            .col-lg-12 {
+                h1 {
+                    font-family: $fFamily;
+                    font-size: 32px;
+                }
+                p {
+                    font-size: 14px;
+                    color: #626262;
+                }
+                .line {
+                    width: 120px;
+                    height: 30px;
+                    margin: 0 auto;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        width: 100px;
+                        height: 2px;
+                        background: $mainColor;
+                        transform: translate(-50%,-50%);
+                    }
+                    .lineInner {
+                        position: absolute;
+                        width: 100px;
+                        height: 100%;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%,-50%);
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            left: 42%;
+                            top: 24%;
+                            width: 15px;
+                            height: 15px;
+                            background: $mainColor;
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+            }
+        }
+        .row {
+            .col-lg-4 {
+                .item {
+                    height: 210px;
+                    padding: 0px 30px;
+                    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+                    transition: $transition;
+                    &:hover {
+                        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+                        i {
+                            background: $mainColor;
+                        }
+                    }
+                    i {
+                        font-size: 23px;
+                        padding: 10px;
+                        color: white;
+                        background: black;
+                        border-radius: 5px;
+                        top: -12%;
+                        left: 50%;
+                        transform: translate(-50%, 12%);
+                        position: absolute;
+                        transition: $transition;
+                    }
+                    h1 {
+                        font-size: 20px;
+                        color: #232323;
+                        font-family: $Dosis;
+                    }
+                    p {
+                        font-size: 13px;
+                        color: #626262;
+                        font-family: $fFamily;
+                    }
+                }
+            }
+        }
+    }
+}
+// End of the feature Section
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// Start of the about Section
+#aboutSection {
+    background: #f6f6f6;
+    height: 600px;
+    .selfContainer {
+        .row {
+            .col-lg-6:nth-of-type(1) {
+                box-sizing: border-box;
+                .item {
+                    height: 400px;
+                    h1 {
+                        font-size: 30px;
+                        font-family: $fFamily;
+                        font-weight: 600;
+                    }
+                    p {
+                        font-size: 14px;
+                        color: #626262;
+                        span {
+                            font-weight: bold;
+                        }
+                    }
+                    .about {
+                        li {
+                            list-style: none;
+                            i {
+                                font-size: 18px;
+                                background: $mainColor;
+                                padding: 12px;
+                                color: white;
+                                border-radius: 3px;
+                            }
+                            a {
+                                font-size: 14px;
+                                color: #626262;
+                                margin: 10px 10px;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                    .socialNetwork {
+                        li {
+                            list-style: none;
+                            i {
+                                font-size: 16px;
+                                padding: 13px;
+                                background: white;
+                                border: 2px solid black;
+                                margin-right: 20px;
+                                transition: $transition;
+                                &:hover {
+                                    border: 2px solid $mainColor;
+                                    background: $mainColor;
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                    button {
+                        position: relative;
+                        width: 130px;
+                        height: 45px;
+                        border: 1px solid $mainColor;
+                        margin-right: 20px;
+                        background: $mainColor;
+                        cursor: pointer;
+                        border-radius: 2px;
+                        outline: none;
+                        &:hover {
+                            .btnOverlay {
+                                width: 100%;
+                                background: white;
+                            }
+                            a {
+                                color: $mainColor;
+                            }
+                        }
+                        .btnOverlay {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 0%;
+                            height: 43px;
+                            transition: $transition;
+                        }
+                        a {
+                            text-decoration: none;
+                            font-family: $Dosis;
+                            font-weight: 600;
+                            font-size: 15px;
+                            color: white;
+                            position: relative;
+                            z-index: 2;
+                        }
+                    }
+                }
+            }
+            .col-lg-6:nth-of-type(2) {
+                .item {
+                    height: 450px;
+                    h1 {
+                        font-size: 22px;
+                        font-family: $Dosis;
+                    }
+                    p {
+                        font-family: $fFamily;
+                        font-size: 14px;
+                        color: #626262;
+                    }
+                }
+            }
+        }
+    }
+}
+// End of the about Section
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// Start of the services Section
+#servicesSection {
+    .selfContainer {
+        .row {
+            .col-lg-12 {
+                h1 {
+                    font-family: $fFamily;
+                    font-size: 32px;
+                }
+                p {
+                    font-size: 14px;
+                    color: #626262;
+                }
+                .line {
+                    width: 120px;
+                    height: 30px;
+                    margin: 0 auto;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        width: 100px;
+                        height: 2px;
+                        background: $mainColor;
+                        transform: translate(-50%,-50%);
+                    }
+                    .lineInner {
+                        position: absolute;
+                        width: 100px;
+                        height: 100%;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%,-50%);
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            left: 42%;
+                            top: 24%;
+                            width: 15px;
+                            height: 15px;
+                            background: $mainColor;
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+            }
+        }
+        .row {
+            .col-lg-4 {
+                margin-bottom: 30px;
+                .item {
+                    height: 210px;
+                    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+                    padding: 0px 40px;
+                    transition: $transition;
+                    &:hover {
+                        transform: translateY(-7%);
+                        i {
+                            transform: translateY(-12%);
+                        }
+                    }
+                    i {
+                        font-size: 30px;
+                        color: $mainColor;
+                        transition: $transition;
+                    }
+                    h1 {
+                        font-size: 20px;
+                        color: #2e2e2e;
+                        font-family: $Dosis;
+                        letter-spacing: 2px;
+                    }
+                    p {
+                        font-family: $fFamily;
+                        font-size: 13px;
+                        color: #626262;
+                    }
+                }
+            }
+        }
+    }
+}
+// End of the services Section
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// Start of the portfolio Section
+#portfolioSection {
+    background: #f6f6f6;
+    .selfContainer {
+        .row {
+            .col-lg-12 {
+                h1 {
+                    font-family: $fFamily;
+                    font-size: 32px;
+                }
+                p {
+                    font-size: 14px;
+                    color: #626262;
+                }
+                .line {
+                    width: 120px;
+                    height: 30px;
+                    margin: 0 auto;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        width: 100px;
+                        height: 2px;
+                        background: $mainColor;
+                        transform: translate(-50%,-50%);
+                    }
+                    .lineInner {
+                        position: absolute;
+                        width: 100px;
+                        height: 100%;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%,-50%);
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            left: 42%;
+                            top: 24%;
+                            width: 15px;
+                            height: 15px;
+                            background: $mainColor;
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+            }
+            .col-lg-12 {
+                ul {
+                    width: 80%;
+                    li {
+                        background: rgb(201, 201, 201);
+                        list-style: none;
+                        margin: 10px;
+                        padding: 5px 20px;
+                        border-radius: 3px;
+                        cursor: pointer;
+                        position: relative;
+                        z-index: 1;
+                        &:hover {
+                            &::before {
+                                content: "";
+                                height: 100%;
+                            }
+                            &::after {
+                                content: "";
+                                height: 100%;
+                            }
+                        }
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            left: 0;
+                            top: 0;
+                            width: 50%;
+                            height: 0px;
+                            background: #00c9b1;
+                            transition: $transition;
+                            z-index: -1;
+                        }
+                        &::after {
+                            position: absolute;
+                            content: '';
+                            right: 0;
+                            bottom: 0;
+                            width: 50%;
+                            height: 0px;
+                            background: #00c9b1;
+                            transition: $transition;
+                            z-index: -1;
+                        }
+                        a {
+                            text-decoration: none;
+                            color: #ffffff;
+                            font-size: 14px;
+                            font-family: $fFamily;
+                            z-index: 1;
+                        }
+                    }
+                }
+            }
+        }
+        .row {
+            .col-lg-4 {
+                padding: 0;
+                position: relative;
+                overflow: hidden;
+                &:hover {
+                    img {
+                        transform: scale(1.1);
+                    }
+                    .imgOverlay {
+                        background: rgba(0,201,177,.8);
+                        transform: scale(0.8);
+                        .innerOverlay {
+                            background: rgba(255, 255, 255, 0);
+                            transform: rotateX(0deg);
+                        }
+                    }
+                }
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                    transform: scale(1);
+                    transition: $transition;
+                }
+                .imgOverlay {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 201, 177, 0);
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+                    transform: scale(0.7);
+                    transition: $transition;
+                    .innerOverlay {
+                        position: absolute;
+                        width: 300px;
+                        height: 200px;
+                        background: rgba(255, 255, 255, 0);
+                        transform: rotateX(90deg);
+                        transition: $transition;
+                        i {
+                            font-size: 40px;
+                            color: $mainColor;
+                            background: white;
+                            border-radius: 50%;
+                            padding: 10px;
+                            transition: $transition;
+                            &:hover {
+                                color: $mainColor;
+                                transform: translateY(-10%);
+                            }
+                        }
+                        h1 {
+                            font-family: $Dosis;
+                            font-size: 30px;
+                            color: white;
+                        }
+                        p {
+                            font-style: italic;
+                            font-size: 15px;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .row {
+            .col-12 {
+                button {
+                    position: relative;
+                    width: 130px;
+                    height: 45px;
+                    border: 1px solid $mainColor;
+                    margin-right: 20px;
+                    background: $mainColor;
+                    cursor: pointer;
+                    border-radius: 2px;
+                    outline: none;
+                    &:hover {
+                        .btnOverlay {
+                            width: 100%;
+                            background: white;
+                        }
+                        a {
+                            color: $mainColor;
+                        }
+                    }
+                    .btnOverlay {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 0%;
+                        height: 43px;
+                        transition: $transition;
+                    }
+                    a {
+                        text-decoration: none;
+                        font-family: $Dosis;
+                        font-weight: 600;
+                        font-size: 15px;
+                        color: white;
+                        position: relative;
+                        z-index: 2;
+                    }
+                }
+            }
+        }
+        .row {
+            .col-lg-3 {
+                .item {
+                    height: 170px;
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                        // position: relative;
+                    }
+                    .imgOverlay {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        transform: scale(0.8);
+                        background: rgba(255, 255, 255, 0.671);
+                        top: 0;
+                        left: 0;
+                        i {
+                            font-size: 40px;
+                            color: $mainColor;
+                        }
+                        p {
+                            font-family: $Dosis;
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End of the portfolio Section
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// Start of the team Section
+#teamSection {
+    .selfContainer {
+        .row {
+            .col-lg-12 {
+                h1 {
+                    font-family: $fFamily;
+                    font-size: 32px;
+                }
+                p {
+                    font-size: 14px;
+                    color: #626262;
+                }
+                .line {
+                    width: 120px;
+                    height: 30px;
+                    margin: 0 auto;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        width: 100px;
+                        height: 2px;
+                        background: $mainColor;
+                        transform: translate(-50%,-50%);
+                    }
+                    .lineInner {
+                        position: absolute;
+                        width: 100px;
+                        height: 100%;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%,-50%);
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            left: 42%;
+                            top: 24%;
+                            width: 15px;
+                            height: 15px;
+                            background: $mainColor;
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+            }
+        }
+        .row {
+            .col-lg-3 {
+                &:hover {
+                    .item {
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: 100%;
+                            height: 100px;
+                            left: 30px;
+                            bottom: -34%;
+                            transform: rotate(0deg);
+                            transform-origin: 0% 0%;
+                        }
+                        .itemOverlay {
+                            top: 0;
+                            left: 0;
+                            background: rgba(0, 0, 0, 0.534);
+                            width: 100%;
+                            height: 100%;
+                            .iconHolder {
+                                width: 40px;
+                                height: 40px;
+                                box-sizing: border-box;
+                                border: 2px solid white;
+                                i {
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .item {
+                    box-sizing: border-box;
+                    height: 300px;
+                    position: relative;
+                    overflow: hidden;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 100px;
+                        left: 30px;
+                        bottom: -34%;
+                        background: white;
+                        transform: rotate(-15deg);
+                        transform-origin: 0% 0%;
+                        transition: $transition;
+                    }
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .itemOverlay {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 0%;
+                        height: 0%;
+                        background: rgba(0, 0, 0, 0.534);
+                        transition: $transition;
+                        .iconHolder {
+                            width: 0px;
+                            height: 0px;
+                            box-sizing: border-box;
+                            border: 0px solid white;
+                            border-radius: 3px;
+                            transition: $transition;
+                            cursor: pointer;
+                            &:hover {
+                                border: 2px solid #00c9b1;
+                                background: #00c9b1;
+                            }
+                            i {
+                                color: white;
+                                font-size: 0px;
+                                transition: $transition;
+                            }
+                        }
+                    }
+                }
+                .personInfo {
+                    border-bottom: 2px solid #00c9b1;
+                    h1 {
+                        font-family: $Dosis;
+                        font-size: 22px;
+                    }
+                    p {
+                        font-family: $fFamily;
+                        font-size: 14px;
+                        font-style: italic;
+                        color: #00c9b1;
+                    }
+                }
+            }
+        }
+    }
+}
+// End of the team Section
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// Start of the feedback Section
+#feedbackSection {
+    background: #f6f6f6;
+    .selfContainer {
+        .row {
+            .col-lg-12 {
+                h1 {
+                    font-family: $fFamily;
+                    font-size: 32px;
+                }
+                p {
+                    font-size: 14px;
+                    color: #626262;
+                }
+                .line {
+                    width: 120px;
+                    height: 30px;
+                    margin: 0 auto;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        width: 100px;
+                        height: 2px;
+                        background: $mainColor;
+                        transform: translate(-50%,-50%);
+                    }
+                    .lineInner {
+                        position: absolute;
+                        width: 100px;
+                        height: 100%;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%,-50%);
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            left: 42%;
+                            top: 24%;
+                            width: 15px;
+                            height: 15px;
+                            background: $mainColor;
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+            }
+        }
+        .row {
+            .col-lg-4 {
+                .item {
+                    box-shadow: 0px 1px 6px rgba(0,0,0,0.15);
+                    height: 300px;
+                    .imgHolder {
+                        width: 90px;
+                        height: auto;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        img {
+                            object-fit: cover;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .textHolder {
+                        width: 80%;
+                        height: auto;
+                        p {
+                            font-family: $fFamily;
+                            text-decoration-skip: 14px;
+                            color: #626262;
+                            font-style: italic;
+                            font-weight: 200;
+                        }
+                    }
+                    .personalInfo {
+                        width: 80%;
+                        height: auto;
+                        h1 {
+                            font-size: 16px;
+                            color: #00c9b1;
+                            font-family: $fFamily;
+                            margin: 0;
+                        }
+                        p {
+                            font-style: italic;
+                            color: #626262;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End of the feedback Section
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// Start of the partner Section
+#partnerSection {
+    .selfContainer {
+        .row {
+            .col-lg-2 {
+                .imgHolder {
+                    height: 150px;
+                    img {
+                        object-fit: contain;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+// End of the partner Section
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// Start of the license Section
+#licenseSection {
+    background: #f6f6f6;
+    .selfContainer {
+        .row {
+            .col-lg-12 {
+                h1 {
+                    font-family: $fFamily;
+                    font-size: 32px;
+                }
+                p {
+                    font-size: 14px;
+                    color: #626262;
+                }
+                .line {
+                    width: 120px;
+                    height: 30px;
+                    margin: 0 auto;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        width: 100px;
+                        height: 2px;
+                        background: $mainColor;
+                        transform: translate(-50%,-50%);
+                    }
+                    .lineInner {
+                        position: absolute;
+                        width: 100px;
+                        height: 100%;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%,-50%);
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            left: 42%;
+                            top: 24%;
+                            width: 15px;
+                            height: 15px;
+                            background: $mainColor;
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+            }
+        }
+        .row {
+            .col-lg-4 {
+                .item {
+                    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+                    border-radius: 5px;
+                    height: 400px;
+                    background: white;
+                    transition: $transition;
+                    &:hover {
+                        background: $mainColor;
+                        .licenseType {
+                            p {
+                                color: white;
+                            }
+                        }
+                        .licensePrice {
+                            h1 {
+                                color: white;
+                            }
+                            p {
+                                color: white;
+                            }
+                        }
+                        .licenseInfo {
+                            ul {
+                                li {
+                                    i {
+                                        color: white;
+                                    }
+                                    a {
+                                        color: white;
+                                    }
+                                }
+                            }
+                        }
+                        .btnHolder {
+                            button {
+                                border: 1px solid white;
+                            }
+                        }
+                    }
+                    .licenseType {
+                        height: 50px;
+                        p {
+                            font-family: $fFamily;
+                            font-size: 14px;
+                            font-weight: bold;
+                            margin: 0;
+                            transition: $transition;
+                        }
+                    }
+                    .licensePrice {
+                        height: 80px;
+                        h1 {
+                            font-family: $Dosis;
+                            font-size: 48px;
+                            font-weight: bold;
+                            margin: 0;
+                            transition: $transition;
+                        }
+                        p {
+                            font-family: $fFamily;
+                            font-size: 12px;
+                            transition: $transition;
+                        }
+                    }
+                    .licenseInfo {
+                        height: 170px;
+                        ul { 
+                            padding: 0;
+                            li {
+                                list-style: none;
+                                margin-bottom: 10px;
+                                i {
+                                    color: $mainColor;
+                                    margin-right: 10px;
+                                    transition: $transition;
+                                }
+                                a {
+                                    color: black;
+                                    text-decoration: none;
+                                    font-family: $fFamily;
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    transition: $transition;
+                                }
+                            }
+                        }
+                    }
+                    .btnHolder {
+                        height: 100px;
+                        button {
+                            position: relative;
+                            width: 130px;
+                            height: 45px;
+                            border: 1px solid $mainColor;
+                            background: $mainColor;
+                            cursor: pointer;
+                            border-radius: 2px;
+                            outline: none;
+                            transition: $transition;
+                            &:hover {
+                                .btnOverlay {
+                                    width: 100%;
+                                    background: white;
+                                }
+                                a {
+                                    color: $mainColor;
+                                }
+                            }
+                            .btnOverlay {
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 0%;
+                                height: 43px;
+                                transition: $transition;
+                            }
+                            a {
+                                text-decoration: none;
+                                font-family: $Dosis;
+                                font-weight: 600;
+                                font-size: 15px;
+                                color: white;
+                                position: relative;
+                                z-index: 2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End of the license Section
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// Start of the post Section
+#postSection {
+    .selfContainer {
+        .row {
+            .col-lg-12 {
+                h1 {
+                    font-family: $fFamily;
+                    font-size: 32px;
+                }
+                p {
+                    font-size: 14px;
+                    color: #626262;
+                }
+                .line {
+                    width: 120px;
+                    height: 30px;
+                    margin: 0 auto;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        width: 100px;
+                        height: 2px;
+                        background: $mainColor;
+                        transform: translate(-50%,-50%);
+                    }
+                    .lineInner {
+                        position: absolute;
+                        width: 100px;
+                        height: 100%;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%,-50%);
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            left: 42%;
+                            top: 24%;
+                            width: 15px;
+                            height: 15px;
+                            background: $mainColor;
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+            }
+        }
+        .row {
+            .col-lg-4 {
+                .item {
+                    height: 460px;
+                    box-shadow: 0 1px 4px rgba(0,0,0,.15);
+                    transition: $transition;
+                    &:hover {
+                        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+                    }
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 50%;
+                    }
+                    .postInfo {
+                        width: 90%;
+                        position: relative;
+                        h1 {
+                            font-size: 22px;
+                            font-family: $fFamily;
+                            color: black;
+                            font-weight: 600;
+                            transition: $transition;
+                            cursor: pointer;
+                            &:hover {
+                                color: $mainColor;
+                            }
+                        }
+                        ul {
+                            li {
+                                list-style: none;
+                                i {
+                                    color: $mainColor;
+                                    margin-right: 5px;
+                                    font-size: 12px;
+                                }
+                                a {
+                                    text-decoration: none;
+                                    color: #626262;
+                                    font-size: 13px;
+                                    margin-right: 15px;
+                                    transition: $transition;
+                                    cursor: pointer;
+                                    &:hover {
+                                        color: $mainColor;
+                                    }
+                                }
+                            }
+                        }
+                        p {
+                            color: #626262;
+                            font-size: 14px;
+                            font-family: $fFamily;
+                        }
+                        .likeIcon {
+                            color: $mainColor;
+                            cursor: pointer;
+                            &:hover {
+                                &::after {
+                                    color: $mainColor;
+                                }
+                            }
+                            &::after {
+                                content: '20';
+                                color: black;
+                                margin-left: 5px;
+                                font-size: 12px;
+                                font-family: $fFamily;
+                                transition: $transition;
+                                cursor: pointer;
+                            }
+                        }
+                        span {
+                            position: absolute;
+                            right: 0;
+                            bottom: 0;
+                            font-size: 12px;
+                            font-family: $fFamily;
+                            transition: $transition;
+                            cursor: pointer;
+                            &:hover {
+                                color: $mainColor;
+                                &::before {
+                                    width: 30px;
+                                    height: 1px;
+                                    left: 0;
+                                }
+                            }
+                            &::before {
+                                content: '';
+                                width: 0px;
+                                height: 0px;
+                                background: $mainColor;
+                                position: absolute;
+                                bottom: 0;
+                                left: -50%;
+                                transition: $transition;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End of the post Section
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// Start of the subscribe Section
+#subscribeSection {
+    height: 330px;
+    background-image: url("../images/subscribe.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 0%;
+    position: relative;
+    .imgOverlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.473);
+        .selfContainer {
+            .row {
+                .col-lg-12 {
+                    .item {
+                        height: 330px;
+                        h1 {
+                            font-family: $Dosis;
+                            font-size: 32px;
+                            color: white;
+                        }
+                        .Subscribe {
+                            form {
+                                input {
+                                    width: 300px;
+                                    height: 40px;
+                                    outline: none;
+                                    border: none;
+                                    background: rgba(224, 224, 224, 0.507);
+                                    color: white;
+                                    padding-left: 10px;
+                                }
+                                ::placeholder { 
+                                    color: white; 
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                }
+                            }
+                            button {
+                                position: relative;
+                                width: 130px;
+                                height: 40px;
+                                border: 1px solid $mainColor;
+                                margin-right: 20px;
+                                background: $mainColor;
+                                cursor: pointer;
+                                border-radius: 2px;
+                                outline: none;
+                                &:hover {
+                                    .btnOverlay {
+                                        width: 100%;
+                                        background: white;
+                                    }
+                                    a {
+                                        color: $mainColor;
+                                    }
+                                }
+                                .btnOverlay {
+                                    position: absolute;
+                                    left: 0;
+                                    top: 0;
+                                    width: 0%;
+                                    height: 38px;
+                                    transition: $transition;
+                                }
+                                a {
+                                    text-decoration: none;
+                                    font-family: $Dosis;
+                                    font-weight: 600;
+                                    font-size: 15px;
+                                    color: white;
+                                    position: relative;
+                                    z-index: 2;
+                                }
+                            }
+                        }
+                        .Icons {
+                            width: 300px;
+                            .iconHolder {
+                                width: 40px;
+                                height: 40px;
+                                border: 2px solid white;
+                                border-radius: 3px;
+                                background: transparent;
+                                transition: $transition;
+                                cursor: pointer;
+                                &:hover {
+                                    border: 2px solid $mainColor;
+                                    background: $mainColor;
+                                }
+                                i {
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End of the subscribe Section
+
+// ------------------------------------------------------------------------------------------------------------------------------
+
+// Start of the footer Section
+footer {
+    .selfContainer {
+        .row {
+            .col-lg-4 {
+                .item {
+                    h1 {
+                        font-size: 28px;
+                        font-family: $Dosis;
+                        color: #2e2e2e;
+                    }
+                    ul {
+                        li {
+                            margin: 20px 0px;
+                            i {
+                                font-size: 25px;
+                                color: #00c9b1;
+                            }
+                            p {
+                                font-family: $Dosis;
+                                font-size: 18px;
+                                font-weight: 600;
+                                margin: 0;
+                            }
+                            span {
+                                font-size: 14px;
+                                color: #626262;
+                            }
+                            .hoverSpan1 {
+                                text-decoration: underline;
+                                cursor: pointer;
+                                transition: $transition;
+                                &:hover {
+                                    color: #00c9b1;
+                                }
+                            }
+                            .hoverSpan2 {
+                                text-decoration: underline;
+                                cursor: pointer;
+                                transition: $transition;
+                                &:hover {
+                                    color: #00c9b1;
+                                }
+                            }
+                            a {
+    
+                            }
+                        }
+                    }
+                }
+            }
+            .col-lg-8 {
+                .item {
+                    h1 {
+                        font-size: 28px;
+                        font-family: $Dosis;
+                        color: #2e2e2e;
+                    }
+                    form {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        .col-lg-6 {
+                            .inputHolder {
+                                height: 50px;
+                                margin-top: 20px;
+                                width: 100%;
+                                input {
+                                    width: 95%;
+                                    height: 48px;
+                                    outline: none;
+                                    border-radius: 5px;
+                                    border: 1px solid #e5e5e5;
+                                    position: absolute;
+                                    padding-left: 20px;
+                                }
+                                input::placeholder {
+                                    color: #5a5a5a;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                        .col-lg-12 {
+                            textarea {
+                                width: 100%;
+                                height: 130px;
+                                outline: none;
+                                border-radius: 5px;
+                                border: 1px solid #e5e5e5;
+                                outline: none;
+                                padding-left: 20px;
+                            }
+                        }
+                        button {
+                            position: relative;
+                            width: 130px;
+                            height: 45px;
+                            border: 1px solid $mainColor;
+                            margin-right: 20px;
+                            background: $mainColor;
+                            cursor: pointer;
+                            border-radius: 2px;
+                            outline: none;
+                            margin-left: 15px;
+                            &:hover {
+                                .btnOverlay {
+                                    width: 100%;
+                                    background: white;
+                                }
+                                a {
+                                    color: $mainColor;
+                                }
+                            }
+                            .btnOverlay {
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 0%;
+                                height: 43px;
+                                transition: $transition;
+                            }
+                            a {
+                                text-decoration: none;
+                                font-family: $Dosis;
+                                font-weight: 600;
+                                font-size: 15px;
+                                color: white;
+                                position: relative;
+                                z-index: 2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .container-fluid {
+        border-top: 1px solid #ddd;
+        .selfContainer {
+            .row {
+                .col-lg-4 {
+                    .item {
+                        height: 60px;
+                        p {
+                            font-size: 13px;
+                            font-family: $fFamily;
+                            color: #232323;
+                            font-weight: 600;
+                            span {
+                                font-size: 13px;
+                                font-family: $fFamily;
+                                color: #00c9b1;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+                .col-lg-4 {
+                    .item {
+                        height: 60px;
+                        ul {
+                            li {
+                                list-style: none;
+                                margin-right: 15px;
+                                a {
+                                    text-decoration: none;
+                                    font-size: 15px;
+                                    font-family: $fFamily;
+                                    color: #232323;
+                                    font-weight: 600;
+                                    transition: $transition;
+                                    &:hover {
+                                        color: $mainColor;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .col-lg-4 {
+                    .item {
+                        height: 60px;
+                        .iconHolder {
+                            box-sizing: border-box;
+                            border: 2px solid black;
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 3px;
+                            margin-left: 10px;
+                            transition: $transition;
+                            cursor: pointer;
+                            i {
+                                transition: $transition;
+                            }
+                            &:hover {
+                                border: #00c9b1;
+                                background: #00c9b1;
+                                i {
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// End of the footer Section
+
+// ------------------------------------------------------------------------------------------------------------------------------

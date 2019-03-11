@@ -1,0 +1,91 @@
+.selfContainer {
+    width: 90%;
+    margin: 0 auto;
+}
+.mainBtn {
+    button {
+        position: relative;
+        width: 130px;
+        height: 45px;
+        border: 1px solid $mainColor;
+        margin-right: 20px;
+        background: $mainColor;
+        cursor: pointer;
+        border-radius: 2px;
+        outline: none;
+        &:hover {
+            .btnOverlay {
+                width: 100%;
+                background: white;
+            }
+            a {
+                color: $mainColor;
+            }
+        }
+        .btnOverlay {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 0%;
+            height: 43px;
+            transition: $transition;
+        }
+        a {
+            text-decoration: none;
+            font-family: $Dosis;
+            font-weight: 600;
+            font-size: 15px;
+            color: white;
+            position: relative;
+            z-index: 2;
+        }
+    }
+}
+.header {
+    .row {
+        .col-lg-12 {
+            h1 {
+                font-family: $fFamily;
+                font-size: 32px;
+            }
+            p {
+                font-size: 14px;
+                color: #626262;
+            }
+            .line {
+                width: 120px;
+                height: 30px;
+                margin: 0 auto;
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    width: 100px;
+                    height: 2px;
+                    background: $mainColor;
+                    transform: translate(-50%,-50%);
+                }
+                .lineInner {
+                    position: absolute;
+                    width: 100px;
+                    height: 100%;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 42%;
+                        top: 24%;
+                        width: 15px;
+                        height: 15px;
+                        background: $mainColor;
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+        }
+    }
+}
